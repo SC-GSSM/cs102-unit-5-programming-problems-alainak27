@@ -46,8 +46,8 @@ public class Unit5 {
      */
     // TODO: Implement default constructor
     public Unit5(){
-        age = 0;
-        name = "Unknown";
+        this.age = 0;
+        this.name = "Unknown";
         count++;
 }
     /**
@@ -64,6 +64,11 @@ public class Unit5 {
      * @param age the age to set
      */
     // TODO: Implement parameterized constructor
+    public Unit5(String name, int age){
+        this.name = name;
+        this.age = age;
+        count++;
+    }
    public String getName(){
         return this.name;
 }
@@ -120,7 +125,7 @@ public class Unit5 {
      */
     // TODO: Implement setAge()
     public void setAge(int age){
-        return this.age;
+         this.age = age;
     }
 
     /**
@@ -150,6 +155,6 @@ public class Unit5 {
      */
     // TODO: Override toString()
     public String toString() {
-    return "Unit5{name='" + name + "', age =" + age + "}";
+    return "Unit5{name='" + name + "', age=" + age + "}";
  }
 }
